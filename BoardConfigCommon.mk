@@ -58,6 +58,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno420
 
+# Power HAL
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
+
 # Radio/RIL
 include $(COMMON_PATH)/radio/single/board.mk
 
