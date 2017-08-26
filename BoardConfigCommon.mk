@@ -18,7 +18,7 @@
 # inherit from qcom-common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
-COMMON_PATH := device/samsung/apq8084-common
+COMMON_PATH := device/samsung/lentis-common
 
 # Architecture
 TARGET_CPU_VARIANT := krait
@@ -130,7 +130,7 @@ TARGET_NO_SENSOR_PERMISSION_CHECK := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/apq8084-common/sepolicy
+    device/samsung/lentis-common/sepolicy
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_apq8084
