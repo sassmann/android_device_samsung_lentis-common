@@ -141,10 +141,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
     $(LOCAL_PATH)/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.APQ8084
-
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -243,5 +239,5 @@ PRODUCT_PACKAGES += \
     WCNSS_qcom_wlan_nv.bin \
     wlan_mac.bin
 
-# common lentislte
-$(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
+# Common apq8084
+$(call inherit-product, device/samsung/apq8084-common/apq8084.mk)
