@@ -17,18 +17,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     use.voice.path.for.pcm.voip=false \
     use.dedicated.device.for.voip=true \
     audio.offload.buffer.size.kb=32 \
-    audio.offload.gapless.enabled=false \
-    media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true
+    audio.offload.gapless.enabled=false
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
     qcom.bluetooth.soc=rome
-
-# Camera
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
