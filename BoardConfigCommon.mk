@@ -18,7 +18,7 @@
 # inherit from apq8084-common
 -include device/samsung/apq8084-common/BoardConfigCommon.mk
 
-COMMON_PATH := device/samsung/lentis-common
+DEVICE_PATH := device/samsung/lentis-common
 
 # Audio
 AUDIO_FEATURE_ENABLED_FLUENCE := true
@@ -61,8 +61,8 @@ BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := $(COMMON_PATH)/recovery/recovery_keys.c
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := $(DEVICE_PATH)/recovery/recovery_keys.c
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -73,7 +73,7 @@ BOARD_RECOVERY_SWIPE := true
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Time
 BOARD_USES_QC_TIME_SERVICES := true
