@@ -59,9 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/lib/libsec-ril.so \
     ro.telephony.mms_data_profile=5 \
-    ro.ril.telephony.mqanelements=6 \
     persist.radio.apm_mdm_not_pwdn=1 \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.add_power_save=1 \

@@ -170,10 +170,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.apq8084
 
-# Radio
-PRODUCT_PACKAGES += \
-    libsecnativefeature
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

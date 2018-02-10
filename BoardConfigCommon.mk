@@ -56,10 +56,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno420
 
-# Radio
-BOARD_PROVIDES_LIBRIL := true
-TARGET_RIL_VARIANT := caf
-
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := $(DEVICE_PATH)/recovery/recovery_keys.c
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
