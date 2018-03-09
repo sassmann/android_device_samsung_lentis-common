@@ -75,6 +75,9 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
+    libgenlock \
+    libqdutils \
+    libqservice \
     tinymix
 
 PRODUCT_COPY_FILES += \
