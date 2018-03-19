@@ -76,6 +76,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.llf.enable=true \
     persist.net.doxlat=true
 
+# Radio: default to LTE
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=9
+
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=0
