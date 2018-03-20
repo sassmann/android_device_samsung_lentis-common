@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audiod \
     audio_policy.apq8084 \
     audio.a2dp.default \
     audio.primary.apq8084 \
