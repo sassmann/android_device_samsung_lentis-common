@@ -148,20 +148,6 @@ PRODUCT_PACKAGES += \
     libOmxVdpp \
     libstagefrighthw
 
-# NFC
-PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
-    nfc_nci.pn54x.default \
-    com.android.nfc_extras \
-    NfcNci \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
-
 # Power HAL
 PRODUCT_PACKAGES += \
     power.apq8084
@@ -212,6 +198,9 @@ PRODUCT_PACKAGES += \
     WCNSS_qcom_cfg.ini \
     WCNSS_qcom_wlan_nv.bin \
     wlan_mac.bin
+
+# NFC
+$(call inherit-product, device/samsung/apq8084-common/nfc/pn547/product.mk)
 
 # Common apq8084
 $(call inherit-product, device/samsung/apq8084-common/apq8084.mk)
