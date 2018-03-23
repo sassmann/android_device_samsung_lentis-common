@@ -44,10 +44,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qc_nlp_in_use=0 \
     ro.gps.agps_provider=1
 
-# NFC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.nfc.port=I2C
-
 # QCOM Vendor
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.qmi.adb_logmask=0 \
