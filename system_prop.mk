@@ -42,7 +42,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qc_nlp_in_use=0 \
-    ro.gps.agps_provider=1
+    ro.gps.agps_provider=1 \
+    sys.qca1530=detect
 
 # QCOM Vendor
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -55,6 +56,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_mdm_not_pwdn=1 \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.add_power_save=1 \
+    persist.radio.sib16_support=0
+
+# Radio: default to LTE
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=9
+
+# Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.call_ring.multiple=0
+
+# Rmnet
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.rmnet.data.enable=true \
     persist.data.wda.enable=true \
     persist.data.df.dl_mode=5 \
@@ -66,14 +79,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.data.llf.enable=true \
     persist.net.doxlat=true
-
-# Radio: default to LTE
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=9
-
-# Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.call_ring.multiple=0
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
