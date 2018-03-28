@@ -20,6 +20,8 @@
 
 DEVICE_PATH := device/samsung/lentis-common
 
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Audio
 AUDIO_FEATURE_ENABLED_FLUENCE := true
 AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
