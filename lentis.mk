@@ -142,10 +142,6 @@ PRODUCT_PACKAGES += \
     libOmxVdpp \
     libstagefrighthw
 
-# Power HAL
-PRODUCT_PACKAGES += \
-    power.apq8084
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
