@@ -120,10 +120,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# IR Blaster
-PRODUCT_PACKAGES += \
-    consumerir.apq8084
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
@@ -159,10 +155,6 @@ PRODUCT_PACKAGES += \
     init.sec.boot.sh \
     init.trace.rc \
     ueventd.qcom.rc
-
-# RMNET
-PRODUCT_PACKAGES += \
-    librmnetctl
 
 # Snap Camera
 #PRODUCT_PACKAGES += \
